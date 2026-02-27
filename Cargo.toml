@@ -1,6 +1,13 @@
+# Don't edit the `bin` list manually! It is updated by `rustlings dev update`
+bin = [
+  { name = "bigTEST", path = "exercises/Variables/bigTEST.rs" },
+  { name = "functions", path = "exercises/Functions/functions.rs" },
+]
+
 [package]
-name = "RustWorkshop"
-version = "0.1.0"
+name = "exercises"
 edition = "2024"
+# Don't publish the exercises on crates.io!
+publish = false
 
 [dependencies]
