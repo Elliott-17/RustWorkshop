@@ -18,6 +18,9 @@ This format is explained at the top of the file
 3. run `rustlings dev update`
 
 
+## NOTE
+`rustlings dev check` Does not work for exercises with tests, idk why, I spent ages trying to figure it out, so use cargo test to test these instead
+It could be a windows thing but idk lol
 
 # How to get rustlings running
 
@@ -39,8 +42,9 @@ Ok the actual plan we will do is: (happy to change this)
 - Introduce Rust in slides
 - Introduce Cargo in slides
 
-- Introduce rust syntax and immutability in slides (Loops, variables, mutability, functions, etc)
-3 problems for basic syntax and immutability
+- Introduce rust syntax and immutability in slides
+- Introduce basic data types and loop structures in slides
+4 problems for basic syntax and immutability
 
 - Introduce Vecs in slides
 2 or 3 problems for Vecs

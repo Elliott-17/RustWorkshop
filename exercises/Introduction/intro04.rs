@@ -1,5 +1,9 @@
 fn main() {
 
+    // TODO: These loops and variables have many syntax errors, fix them to make the code compile and run.
+    // The output is not important, just make sure the code runs without errors.
+
+
     let counter = 0;
     let multiplier = 2;
     let result = 1;
