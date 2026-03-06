@@ -35,18 +35,28 @@ final_message = """Now you can do rust!!! For a more comprehensive introduction,
 # A multi-line hint to be shown to users on request.
 #hint = """???"""
 
+
 [[exercises]]
-name = "bigTEST"
-dir = "Variables"
+name = "intro01"
+dir = "Introduction"
 test = false
-hint = """
-To finish this exercise, you need to …
-These links might help you …"""
+hint = """Variables in rust must be declared using the let keyword"""
+
+[[exercises]]
+name = "intro02"
+dir = "Introduction"
+test = false
+hint = """Variables in rust must be declared as mutable if their value is to be changed"""
 
 
 [[exercises]]
-name = "functions"
-dir = "Functions"
+name = "intro03"
+dir = "Introduction"
+hint = """Variables in rust must be declared as mutable if their value is to be changed"""
+
+[[exercises]]
+name = "intro04"
+dir = "Introduction"
 hint = """
-To finish this exercise, you need to …
-These links might help you …"""
+There are various mistakes in this file
+"""

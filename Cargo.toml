@@ -1,7 +1,9 @@
 # Don't edit the `bin` list manually! It is updated by `rustlings dev update`
 bin = [
-  { name = "bigTEST", path = "exercises/Variables/bigTEST.rs" },
-  { name = "functions", path = "exercises/Functions/functions.rs" },
+  { name = "intro01", path = "exercises/Introduction/intro01.rs" },
+  { name = "intro02", path = "exercises/Introduction/intro02.rs" },
+  { name = "intro03", path = "exercises/Introduction/intro03.rs" },
+  { name = "intro04", path = "exercises/Introduction/intro04.rs" },
 ]
 
 [package]

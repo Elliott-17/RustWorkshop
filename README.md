@@ -30,3 +30,32 @@ Can maybe also install rust analyzer?
 
 
 # I have added a couple example exercises for now
+
+
+
+# Actual plan
+
+Ok the actual plan we will do is: (happy to change this)
+- Introduce Rust in slides
+- Introduce Cargo in slides
+
+- Introduce rust syntax and immutability in slides (Loops, variables, mutability, functions, etc)
+3 problems for basic syntax and immutability
+
+- Introduce Vecs in slides
+2 or 3 problems for Vecs
+
+- Introduce Ownership and Borrowing in slides
+2 or 3 problems for ownership and borrowing
+
+- Introduce Structures and Enums in slides
+2 or 3 problems for structures and enums
+
+- Introduce Traits and Generics in slides
+2 or 3 problems for traits and generics
+
+- Introduce Options and Results in slides
+2 or 3 problems for options and results
+
+- Introduce Crates in slides
+Idk if crates will work with rustlings but we can try to make some problems for using crates
