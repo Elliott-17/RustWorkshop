@@ -35,7 +35,7 @@ fn double_number(x: integer) -> char {
 
 // TODO: This function should return the maximum of a and b
 fn get_maximum(a: integer, b: integer) -> char {
-    if a > b {
+    if a < b {
         a
     } else {
         b
