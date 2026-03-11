@@ -46,8 +46,8 @@ Ok the actual plan we will do is: (happy to change this)
 - Introduce basic data types and loop structures in slides
 4 problems for basic syntax and immutability
 
-- Introduce Vecs in slides
-2 or 3 problems for Vecs
+- Introduce Vecs and Strings in slides
+2 or 3 problems for Vecs and Strings
 
 - Introduce Ownership and Borrowing in slides
 2 or 3 problems for ownership and borrowing

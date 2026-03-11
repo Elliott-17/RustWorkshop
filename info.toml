@@ -65,25 +65,94 @@ final_message = """Now you can do rust!!! For a more comprehensive introduction,
 
 [[exercises]]
 name = "intro01"
-dir = "Introduction"
+dir = "01-Introduction"
 test = false
 hint = """Variables in rust must be declared using the let keyword"""
 
 [[exercises]]
 name = "intro02"
-dir = "Introduction"
+dir = "01-Introduction"
 test = false
 hint = """Variables in rust must be declared as mutable if their value is to be changed"""
 
 
 [[exercises]]
 name = "intro03"
-dir = "Introduction"
-hint = """Variables in rust must be declared as mutable if their value is to be changed"""
+dir = "01-Introduction"
+hint = """
+Functions must declare their argument type and return type correctly
+Common types are: bool, char, i32
+"""
 
 [[exercises]]
 name = "intro04"
-dir = "Introduction"
+dir = "01-Introduction"
 hint = """
-There are various mistakes in this file
+There are various syntax mistakes in this file, remember loops can be formatted as `for i in 1..5 { ...`
+Remember that `variable += 5;` will add 5 to the variable
 """
+
+
+[[exercises]]
+name = "vecs01"
+dir = "02-vecs"
+hint = """
+In Rust, there are two ways to define a Vector.
+1. One way is to use the `Vec::new()` function to create a new vector
+   and fill it with the `push()` method.
+2. The second way is to use the `vec![]` macro and define your elements
+   inside the square brackets. This way is simpler when you exactly know
+   the initial values.
+
+Check this chapter: https://doc.rust-lang.org/book/ch08-01-vectors.html
+of the Rust book to learn more."""
+
+[[exercises]]
+name = "vecs02"
+dir = "02-vecs"
+hint = """
+Use the `.push()` method on the vector to push new elements to it."""
+
+
+[[exercises]]
+name = "strings01"
+dir = "03-strings"
+test = false
+hint = """
+The `current_favorite_color` function is currently returning a string slice
+with the `'static` lifetime. We know this because the data of the string lives
+in our code itself -- it doesn't come from a file or user input or another
+program -- so it will live as long as our program lives.
+
+But it is still a string slice. There's one way to create a `String` by
+converting a string slice covered in the Strings chapter of the book, and
+another way that uses the `From` trait."""
+
+[[exercises]]
+name = "strings02"
+dir = "03-strings"
+test = false
+hint = """
+Yes, it would be really easy to fix this by just changing the value bound to
+`word` to be a string slice instead of a `String`, wouldn't it? There is a way
+to add one character to the `if` statement, though, that will coerce the
+`String` into a string slice.
+
+Side note: If you're interested in learning about how this kind of reference
+conversion works, you can jump ahead in the book and read this part in the
+smart pointers chapter:
+https://doc.rust-lang.org/book/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods"""
+
+[[exercises]]
+name = "strings03"
+dir = "03-strings"
+hint = """
+There are many useful standard library functions for strings. Let's try and use
+some of them:
+https://doc.rust-lang.org/std/string/struct.String.html#method.trim
+
+For the `compose_me` method: You can either use the `format!` macro, or convert
+the string slice into an owned string, which you can then freely extend.
+
+For the `replace_me` method, you can check out the `replace` method:
+https://doc.rust-lang.org/std/string/struct.String.html#method.replace"""
