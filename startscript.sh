@@ -4,6 +4,7 @@
 echo "Setting up the rust workshop!!! Please Wait"
 echo "All files will be saved in the Desktop Folder, so if you want to keep anything, make sure to grab it"
 
+sleep 5
 
 user=$(whoami)
 mkdir /home/$user/Desktop >/dev/null 2>&1
