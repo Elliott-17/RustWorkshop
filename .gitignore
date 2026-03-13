@@ -5,3 +5,4 @@ target/
 .rustlings-state.txt
 
 *.txt
+formatter.rs

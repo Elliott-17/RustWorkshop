@@ -44,22 +44,27 @@ Ok the actual plan we will do is: (happy to change this)
 
 - Introduce rust syntax and immutability in slides
 - Introduce basic data types and loop structures in slides
-4 problems for basic syntax and immutability
+4 problems for basic syntax and immutability - Elliott
 
 - Introduce Vecs and Strings in slides
-2 or 3 problems for Vecs and Strings
+2 or 3 problems for Vecs and Strings - Elliott
 
 - Introduce Ownership and Borrowing in slides
-2 or 3 problems for ownership and borrowing
-
-- Introduce Structures and Enums in slides
-2 or 3 problems for structures and enums
-
-- Introduce Traits and Generics in slides
-2 or 3 problems for traits and generics
+2 or 3 problems for ownership and borrowing - Arnav
 
 - Introduce Options and Results in slides
-2 or 3 problems for options and results
+2 or 3 problems for options and results - Elliott
+
+- Introduce Structures and Enums in slides
+2 or 3 problems for structures and enums - Julio
+
+- Boxes, Dyns and Moves
+2 or 3 problems for boxes, dyns and moves
+
+- Introduce Traits and Generics in slides
+2 or 3 problems for traits and generics - Jake
+
+
 
 - Introduce Crates in slides
-Idk if crates will work with rustlings but we can try to make some problems for using crates
+Idk if crates will work with rustlings but we can try to make some problems for using crates - Elliott
