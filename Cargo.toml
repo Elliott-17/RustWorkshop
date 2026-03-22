@@ -9,6 +9,9 @@ bin = [
   { name = "strings01", path = "exercises/03-strings/strings01.rs" },
   { name = "strings02", path = "exercises/03-strings/strings02.rs" },
   { name = "strings03", path = "exercises/03-strings/strings03.rs" },
+  { name = "options01", path = "exercises/05-Options/options01.rs" },
+  { name = "options02", path = "exercises/05-Options/options02.rs" },
+  { name = "options03", path = "exercises/05-Options/options03.rs" },
 ]
 
 [package]

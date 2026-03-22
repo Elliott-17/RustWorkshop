@@ -32,9 +32,17 @@ Will probably make some bash script that can do this for our participants
 Can maybe also install rust analyzer?
 
 
-# I have added a couple example exercises for now
 
-
+# TODO:
+- Basic Syntax and Immutability DONE
+- Basic Data Types and Loop Structures DONE
+- Vecs and Strings DONE
+- Ownership and Borrowing 
+- Options and Results
+- Structures and Enums
+- Boxes, Dyns and Moves
+- Traits and Generics
+- Crates
 
 # Actual plan
 
