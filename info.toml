@@ -198,3 +198,31 @@ But remember, you can return from a function at any time, even in an if let stat
 
 """
 
+
+[[exercises]]
+name = "results01"
+dir = "06-Results"
+hint = """
+Use `Ok(value)` to wrap a successful result and `Err(message)` to wrap an error.
+You'll need to check if the hour is valid (not higher than 23) and return an error for invalid hours.
+Before 22:00, return Ok(5), and at 22:00 or later, return Ok(0).
+"""
+
+[[exercises]]
+name = "results02"
+dir = "06-Results"
+hint = """
+Change the return type from `Option<String>` to `Result<String, String>`.
+Instead of returning `None` for the error case, return `Err(String::from("Empty names aren't allowed"))`.
+You'll also need to adjust the test file expectations from `as_deref()` to work with Result.
+"""
+
+[[exercises]]
+name = "results03"
+dir = "06-Results"
+hint = """
+Use the `?` operator to propagate errors. When `parse::<i32>()` returns an error,
+the `?` operator will immediately return that error from the function.
+Don't forget that `qty` will be a `Result` type after parsing, so you need to use `?` to extract the value.
+"""
+
