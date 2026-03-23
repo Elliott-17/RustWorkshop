@@ -15,6 +15,9 @@ bin = [
   { name = "results01", path = "exercises/06-Results/results01.rs" },
   { name = "results02", path = "exercises/06-Results/results02.rs" },
   { name = "results03", path = "exercises/06-Results/results03.rs" },
+  { name = "crates01", path = "exercises/11-Crates/crates01.rs" },
+  { name = "crates02", path = "exercises/11-Crates/crates02.rs" },
+  { name = "crates03", path = "exercises/11-Crates/crates03.rs" },
 ]
 
 [package]
@@ -42,6 +45,5 @@ empty_loop = "forbid"
 infinite_loop = "deny"
 # You shouldn't leak memory while still learning Rust!
 mem_forget = "deny"
-
 
 [dependencies]

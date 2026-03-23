@@ -226,3 +226,23 @@ the `?` operator will immediately return that error from the function.
 Don't forget that `qty` will be a `Result` type after parsing, so you need to use `?` to extract the value.
 """
 
+
+
+[[exercises]]
+name = "crates01"
+dir = "11-Crates"
+test = false
+hint = """
+-_- just run `cargo add rand` in a terminal, in the exercises directory and it will work
+"""
+
+
+
+[[exercises]]
+name = "crates02"
+dir = "11-Crates"
+hint = """
+Make something cool
+"""
+
+
