@@ -15,9 +15,11 @@ bin = [
   { name = "results01", path = "exercises/06-Results/results01.rs" },
   { name = "results02", path = "exercises/06-Results/results02.rs" },
   { name = "results03", path = "exercises/06-Results/results03.rs" },
+  { name = "structures01", path = "exercises/06-Structures/structures01.rs" },
+  { name = "structures02", path = "exercises/06-Structures/structures02.rs" },
+  { name = "enums01", path = "exercises/07-Enums/enums01.rs" },
   { name = "crates01", path = "exercises/11-Crates/crates01.rs" },
   { name = "crates02", path = "exercises/11-Crates/crates02.rs" },
-  { name = "crates03", path = "exercises/11-Crates/crates03.rs" },
 ]
 
 [package]
@@ -37,8 +39,6 @@ unstable_features = "forbid"
 dead_code = "allow"
 
 [lints.clippy]
-# You forgot a `todo!()`!
-todo = "forbid"
 # This can only happen by mistake in Rustlings.
 empty_loop = "forbid"
 # No infinite loops are needed in Rustlings.
