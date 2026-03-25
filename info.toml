@@ -347,6 +347,35 @@ hint = """
 Pattern matching with `case`!
 """
 
+[[exercises]]
+name = "generics01"
+dir = "08-Generics"
+hint = """
+How can we make it so that our struct accepts generic types?
+We also need to make sure that x & y can be different types...
+When creating the methods for the implementation - how can we make sure that it also returns the correct generic types?
+"""
+
+[[exercises]]
+name = "traits01"
+dir = "09-Traits"
+hint = """
+Implement the `summarise` method for the Summary trait.
+Then implement the Display trait using `fmt::Display` and `fmt::Formatter`.
+Be careful with UTF-8 characters when truncating strings -- use `.chars().take()` instead of byte slicing.
+I'd recommend going over this short chapter:
+https://doc.rust-lang.org/book/ch10-02-traits.html
+"""
+
+[[exercises]]
+name = "boxes01"
+dir = "10-Boxes"
+test = true
+hint = """
+Box<dyn Error> lets you return different error types from a single function.
+Box<dyn Trait> in a Vec lets you store different types that implement the same trait.
+The `dyn` keyword tells Rust to use dynamic dispatch instead of knowing the concrete type at compile time.
+"""
 
 
 [[exercises]]
