@@ -159,6 +159,104 @@ https://doc.rust-lang.org/std/string/struct.String.html#method.replace"""
 
 
 [[exercises]]
+name = "ownership01"
+dir = "04-Ownership"
+test = false
+hint = """
+In Rust, passing a value to a function moves it -- the caller no longer owns it.
+If you need to use the value after the call, you need to create a copy of it
+before passing it to the function.
+Remember: don't change the `greet` function signature -- only fix the call site."""
+
+[[exercises]]
+name = "ownership02"
+dir = "04-Ownership"
+test = false
+hint = """
+To call methods that modify a value (like `push_str`), the variable must be declared as mutable.
+How do you declare a variable as mutable in Rust?"""
+
+[[exercises]]
+name = "ownership03"
+dir = "04-Ownership"
+test = false
+hint = """
+Rust does not allow a mutable borrow while an immutable borrow is still live.
+A borrow stays live until the last point where it is used.
+Think about where `r` is used and whether you can rearrange things so the
+immutable borrow is no longer active when the mutable borrow is created."""
+
+[[exercises]]
+name = "ownership04"
+dir = "04-Ownership"
+test = false
+hint = """
+Rust allows at most ONE mutable borrow of a value at a time.
+Having both `a` and `b` as `&mut v` simultaneously is not allowed.
+You don't need two separate mutable references here -- just use `v` directly,
+or use only one mutable reference at a time."""
+
+[[exercises]]
+name = "ownership05"
+dir = "04-Ownership"
+test = false
+hint = """
+`greeting` is a local variable inside `make_greeting`.
+When the function returns, `greeting` is dropped -- a reference to it would be dangling.
+Instead of returning a reference, think about how you can transfer ownership of
+the value to the caller."""
+
+[[exercises]]
+name = "refs01"
+dir = "04-References"
+test = false
+hint = """
+`print_length` expects a borrowed value, not an owned one.
+Passing `name` directly would move it into the function.
+How do you pass a value by reference instead of by value in Rust?"""
+
+[[exercises]]
+name = "refs02"
+dir = "04-References"
+test = false
+hint = """
+`add_item` needs a mutable reference so it can modify the vector.
+Rust requires you to be explicit when handing out mutable access to a value.
+Look at the function signature -- what kind of reference does it expect?
+Make sure the call site matches."""
+
+[[exercises]]
+name = "refs03"
+dir = "04-References"
+test = false
+hint = """
+`sum` expects a borrowed slice, not an owned `Vec`.
+Passing `scores` directly moves the whole vector into the function.
+How can you pass a reference to `scores` instead?
+Bonus: doing so means `scores` is still usable after the call."""
+
+[[exercises]]
+name = "refs04"
+dir = "04-References"
+test = false
+hint = """
+`first` borrows a slice of `text`. While that borrow is live, `text` can't be mutated.
+A borrow stays live until the last point where it is used.
+Can you rearrange the code so that `first` is no longer needed by the time
+`text` is modified?"""
+
+[[exercises]]
+name = "refs05"
+dir = "04-References"
+test = false
+hint = """
+When a function returns a reference that could come from one of multiple inputs,
+Rust needs a lifetime annotation to know how long the return value lives.
+You need to tell Rust that the returned reference lives at least as long as
+both inputs. Look into lifetime parameters for functions."""
+
+
+[[exercises]]
 name = "options01"
 dir = "05-Options"
 hint = """
