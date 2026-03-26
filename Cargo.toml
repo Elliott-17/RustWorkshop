@@ -28,6 +28,7 @@ bin = [
   { name = "structures01", path = "exercises/06-Structures/structures01.rs" },
   { name = "structures02", path = "exercises/06-Structures/structures02.rs" },
   { name = "enums01", path = "exercises/07-Enums/enums01.rs" },
+  { name = "enums02", path = "exercises/07-Enums/enums02.rs" },
   { name = "generics01", path = "exercises/08-Generics/generics01.rs" },
   { name = "traits01", path = "exercises/09-Traits/traits01.rs" },
   { name = "boxes01", path = "exercises/10-Boxes/boxes01.rs" },

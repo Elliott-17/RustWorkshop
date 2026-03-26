@@ -348,6 +348,15 @@ Pattern matching with `case`!
 """
 
 [[exercises]]
+name = "enums02"
+dir = "07-Enums"
+hint = """
+Pattern matching with `case`!
+"""
+
+
+
+[[exercises]]
 name = "generics01"
 dir = "08-Generics"
 hint = """
@@ -376,7 +385,6 @@ Box<dyn Error> lets you return different error types from a single function.
 Box<dyn Trait> in a Vec lets you store different types that implement the same trait.
 The `dyn` keyword tells Rust to use dynamic dispatch instead of knowing the concrete type at compile time.
 """
-
 
 [[exercises]]
 name = "crates01"
